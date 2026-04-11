@@ -1,4 +1,4 @@
-import { ExternalLink, Code2 } from "lucide-react";
+import { Code2 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const ProjectsSection = () => {
