@@ -11,24 +11,26 @@ const CertificationsSection = () => {
   const list = useScrollAnimation(0.1);
 
   return (
-    <section id="certifications" className="relative py-24 overflow-hidden">
+    <section id="certifications" className="relative py-20 md:py-28 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent" />
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div ref={heading.ref} className={`scroll-hidden ${heading.isVisible ? "scroll-visible" : ""}`}>
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">Certifications</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-12">Professional Certifications</h2>
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div ref={heading.ref} className={`text-center max-w-2xl mx-auto scroll-hidden ${heading.isVisible ? "scroll-visible" : ""}`}>
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">Certifications</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-14">
+            Professional Certifications
+          </h2>
         </div>
 
         <div ref={list.ref} className={`max-w-2xl mx-auto space-y-4 stagger-children ${list.isVisible ? "stagger-visible" : ""}`}>
           {certs.map((c) => (
-            <div key={c.name} className="flex items-start gap-4 rounded-xl glass-card p-5 hover-lift">
+            <div key={c.name} className="flex items-start gap-4 rounded-xl border border-border/50 bg-card/60 backdrop-blur-sm p-5 hover-lift">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 shrink-0">
                 <Award className="text-primary" size={20} />
               </div>
               <div>
                 <p className="font-medium text-foreground">{c.name}</p>
-                <p className="text-sm text-muted-foreground">{c.org}</p>
+                <p className="text-sm text-muted-foreground mt-0.5">{c.org}</p>
               </div>
             </div>
           ))}
