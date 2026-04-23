@@ -31,7 +31,7 @@ const ParticleBackground = () => {
     };
     window.addEventListener("mousemove", handleMouse);
 
-    const count = Math.min(80, Math.floor((window.innerWidth * window.innerHeight) / 15000));
+    const count = Math.min(45, Math.floor((window.innerWidth * window.innerHeight) / 28000));
     for (let i = 0; i < count; i++) {
       const baseOpacity = Math.random() * 0.4 + 0.1;
       particles.push({
@@ -87,7 +87,7 @@ const ParticleBackground = () => {
           const dx2 = p.x - particles[j].x;
           const dy2 = p.y - particles[j].y;
           const d = Math.sqrt(dx2 * dx2 + dy2 * dy2);
-          if (d < 140) {
+          if (d < 110) {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(particles[j].x, particles[j].y);
