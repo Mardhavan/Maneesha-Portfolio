@@ -13,6 +13,7 @@ import Footer from "@/components/Footer";
 
 const Index = () => (
   <>
+    <AnimatedBackground />
     <ParticleBackground />
     <Navbar />
     <HeroSection />
