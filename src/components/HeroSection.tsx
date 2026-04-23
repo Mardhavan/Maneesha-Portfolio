@@ -4,18 +4,14 @@ import profileImg from "@/assets/profile-cartoon.png";
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-      {/* Animated gradient mesh */}
+      {/* Animated gradient mesh - richer multi-color blobs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-primary/15 blur-[120px] animate-float" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-accent/10 blur-[100px] animate-float" style={{ animationDelay: "2s" }} />
-        <div className="absolute top-[40%] left-[50%] w-[300px] h-[300px] rounded-full bg-primary/8 blur-[80px] animate-float" style={{ animationDelay: "4s" }} />
+        <div className="absolute top-[-15%] left-[-10%] w-[700px] h-[700px] rounded-full bg-primary/25 blur-[120px] animate-float" />
+        <div className="absolute bottom-[-15%] right-[-10%] w-[600px] h-[600px] rounded-full bg-accent/20 blur-[110px] animate-float" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-[30%] left-[45%] w-[400px] h-[400px] rounded-full bg-fuchsia-500/15 blur-[100px] animate-float" style={{ animationDelay: "4s" }} />
+        <div className="absolute top-[10%] right-[20%] w-[350px] h-[350px] rounded-full bg-cyan-500/15 blur-[90px] animate-float" style={{ animationDelay: "3s" }} />
+        <div className="absolute bottom-[20%] left-[15%] w-[300px] h-[300px] rounded-full bg-violet-500/15 blur-[80px] animate-float" style={{ animationDelay: "5s" }} />
       </div>
-
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: "linear-gradient(hsl(var(--foreground)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)",
-        backgroundSize: "60px 60px"
-      }} />
 
       <div className="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-8 md:gap-16 items-center relative z-10">
         {/* Text */}
@@ -92,9 +88,9 @@ const HeroSection = () => {
               <img
                 src={profileImg}
                 alt="Maneesha Elpur – Business & Data Analyst"
-                width={512}
-                height={512}
-                className="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain drop-shadow-2xl animate-float"
+                width={640}
+                height={640}
+                className="w-72 h-72 sm:w-96 sm:h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] object-contain drop-shadow-2xl animate-float"
               />
             </div>
 
