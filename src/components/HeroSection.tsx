@@ -4,13 +4,20 @@ import profileImg from "@/assets/profile-cartoon.png";
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-      {/* Animated gradient mesh - richer multi-color blobs */}
+      {/* Futuristic layered background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-[-15%] left-[-10%] w-[700px] h-[700px] rounded-full bg-primary/25 blur-[120px] animate-float" />
-        <div className="absolute bottom-[-15%] right-[-10%] w-[600px] h-[600px] rounded-full bg-accent/25 blur-[110px] animate-float" style={{ animationDelay: "2s" }} />
-        <div className="absolute top-[30%] left-[45%] w-[400px] h-[400px] rounded-full bg-primary/20 blur-[100px] animate-float" style={{ animationDelay: "4s" }} />
-        <div className="absolute top-[10%] right-[20%] w-[350px] h-[350px] rounded-full bg-accent/15 blur-[90px] animate-float" style={{ animationDelay: "3s" }} />
-        <div className="absolute bottom-[20%] left-[15%] w-[300px] h-[300px] rounded-full bg-primary/15 blur-[80px] animate-float" style={{ animationDelay: "5s" }} />
+        {/* Slow rotating conic mesh */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1400px] h-[1400px] bg-conic-mesh rounded-full blur-3xl opacity-70 animate-spin-slow" />
+        {/* Subtle grid */}
+        <div className="absolute inset-0 bg-grid-subtle" />
+        {/* Color blobs */}
+        <div className="absolute top-[-15%] left-[-10%] w-[600px] h-[600px] rounded-full bg-primary/30 blur-[120px] animate-float" />
+        <div className="absolute bottom-[-15%] right-[-10%] w-[550px] h-[550px] rounded-full bg-accent/30 blur-[110px] animate-float" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-[20%] right-[25%] w-[300px] h-[300px] rounded-full bg-primary/20 blur-[90px] animate-float" style={{ animationDelay: "4s" }} />
+        {/* Animated scan line */}
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent animate-scan" />
+        {/* Top/bottom vignette */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background pointer-events-none" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-8 md:gap-16 items-center relative z-10">
