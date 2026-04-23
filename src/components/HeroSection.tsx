@@ -90,7 +90,7 @@ const HeroSection = () => {
                 alt="Maneesha Elpur – Business & Data Analyst"
                 width={640}
                 height={640}
-                className="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain drop-shadow-2xl animate-float"
+                className="w-72 h-72 sm:w-96 sm:h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] xl:w-[36rem] xl:h-[36rem] object-contain drop-shadow-2xl animate-float"
               />
             </div>
 
