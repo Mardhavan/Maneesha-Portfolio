@@ -81,8 +81,10 @@ const HeroSection = () => {
         {/* Cartoon Avatar */}
         <div className="order-1 md:order-2 flex justify-center animate-fade-in">
           <div className="relative">
-            {/* Glowing ring behind */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 blur-2xl scale-110 animate-pulse-glow" />
+            {/* Multi-layer glowing halo behind */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/40 via-accent/30 to-primary/40 blur-3xl scale-125 animate-pulse-glow" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 via-accent/30 to-accent/20 blur-2xl scale-110 animate-pulse-glow" style={{ animationDelay: "1s" }} />
+            <div className="absolute inset-[-20%] rounded-full bg-primary/10 blur-[100px] scale-150 animate-pulse-glow" style={{ animationDelay: "2s" }} />
             
             <div className="relative">
               <img
