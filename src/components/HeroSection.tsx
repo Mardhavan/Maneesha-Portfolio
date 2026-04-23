@@ -8,8 +8,6 @@ const HeroSection = () => {
       <div className="absolute inset-0 overflow-hidden">
         {/* Slow rotating conic mesh */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1400px] h-[1400px] bg-conic-mesh rounded-full blur-3xl opacity-70 animate-spin-slow" />
-        {/* Subtle grid */}
-        <div className="absolute inset-0 bg-grid-subtle" />
         {/* Color blobs */}
         <div className="absolute top-[-15%] left-[-10%] w-[600px] h-[600px] rounded-full bg-primary/30 blur-[120px] animate-float" />
         <div className="absolute bottom-[-15%] right-[-10%] w-[550px] h-[550px] rounded-full bg-accent/30 blur-[110px] animate-float" style={{ animationDelay: "2s" }} />
