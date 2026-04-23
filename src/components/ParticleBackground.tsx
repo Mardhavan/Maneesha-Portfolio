@@ -31,7 +31,7 @@ const ParticleBackground = () => {
     };
     window.addEventListener("mousemove", handleMouse);
 
-    const count = Math.min(80, Math.floor((window.innerWidth * window.innerHeight) / 15000));
+    const count = Math.min(45, Math.floor((window.innerWidth * window.innerHeight) / 28000));
     for (let i = 0; i < count; i++) {
       const baseOpacity = Math.random() * 0.4 + 0.1;
       particles.push({
